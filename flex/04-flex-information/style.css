@@ -6,10 +6,63 @@ img {
   width: 100px;
   height: 100px;
 }
+.image-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  gap: 52px;
+}
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  gap: 15px;
+}
+
+.images-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  gap: 15px;
+}
+
+.images-container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  gap: 15px;
+}
+
+.images-container4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  gap: 15px;
+}
+
+.text {
+  inline-size: 200px;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 /* do not edit this footer */
