@@ -1,28 +1,87 @@
+/*Tasks for tomorrow:
+-Fix sidebar and cards so that they take up all available space above the footer.
+-Make the cards be arranged horizontally and wrap to multiple lines when they run out of room on the page.
+*/
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
 }
 
 .sidebar {
   width: 300px;
+  min-width: 300px;
   background: royalblue;
+  padding: 16px;
+  min-height: 41.3em;
+}
+
+.card-container {
+  display: flex;
+  gap: 32px;
+  margin: 32px;
+  width: 100em;
+  flex-wrap: wrap;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 32px;
+  flex: 0 1 auto;
+  height: 200px;
+  width: 200px;
 }
